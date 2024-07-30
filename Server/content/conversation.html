@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-size: 20px;            
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        img {
+            max-width: 500px;
+            height: auto;
+            margin: 20px;
+        }
+
+        #chat-container {
+            width: 100%;
+            margin: 0 20px 20px 20px;
+        }
+
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 350px;
+            overflow-y: scroll;
+        }
+
+            #messages .assistant {
+                color: darkgreen;
+                margin-top: 10px;
+            }
+
+            #messages .user {
+                color: #353535;
+                margin-top: 10px;
+            }
+
+        #input-container {
+            margin-top: 10px;
+        }
+
+        #message-input {
+            width: 80%;
+            padding: 10px;
+        }
+
+        #send-button {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="template.png" />
+        <div id="chat-container">
+            <h4>Template</h4>
+            <p>Here's an assistant.</p>
+            <div id="messages"></div>
+            <div id="input-container">
+                <input id="message-input" type="text" placeholder="Type a message...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="app://dynamic.js"></script>
+    <script src="conversation.js"></script>
+</body>
+</html>
